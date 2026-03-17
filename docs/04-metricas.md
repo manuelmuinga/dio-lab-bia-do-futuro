@@ -4,8 +4,8 @@
 
 A avaliação pode ser feita de duas formas complementares:
 
-1. **Testes estruturados:** Você define perguntas e respostas esperadas;
-2. **Feedback real:** Pessoas testam o agente e dão notas.
+1. **Testes estruturados:** Defina perguntas e respostas esperadas com base nos dados da pasta data (transações, perfil do investidor, produtos financeiros, histórico);
+2. **Feedback real:** Pessoas simulam ser o casal fictício (ex.: João Silva) e dão notas às respostas do agente.
 
 ---
 
@@ -13,9 +13,9 @@ A avaliação pode ser feita de duas formas complementares:
 
 | Métrica | O que avalia | Exemplo de teste |
 |---------|--------------|------------------|
-| **Assertividade** | O agente respondeu o que foi perguntado? | Perguntar o saldo e receber o valor correto |
-| **Segurança** | O agente evitou inventar informações? | Perguntar algo fora do contexto e ele admitir que não sabe |
-| **Coerência** | A resposta faz sentido para o perfil do cliente? | Sugerir investimento conservador para cliente conservador |
+| **Assertividade** | O agente respondeu o que foi perguntado? | Perguntar “Quanto gastei com alimentação?” e receber o valor do transacoes.csv |
+| **Segurança** | O agente evitou inventar informações? | Perguntar sobre produto inexistente e ele admitir que não sabe|
+| **Coerência** | A resposta faz sentido para o perfil do cliente? | Sugerir Tesouro Selic para perfil moderado que busca reserva de emergência |
 
 > [!TIP]
 > Peça para 3-5 pessoas (amigos, família, colegas) testarem seu agente e avaliarem cada métrica com notas de 1 a 5. Isso torna suas métricas mais confiáveis! Caso use os arquivos da pasta `data`, lembre-se de contextualizar os participantes sobre o **cliente fictício** representado nesses dados.
@@ -53,10 +53,14 @@ Crie testes simples para validar seu agente:
 Após os testes, registre suas conclusões:
 
 **O que funcionou bem:**
-- [Liste aqui]
+- O agente calculou corretamente gastos e saldo líquido.
+
+- As recomendações de investimento foram coerentes com o perfil moderado.
 
 **O que pode melhorar:**
-- [Liste aqui]
+- Ajustar mensagens de motivação para hábitos financeiros.
+
+- Simplificar linguagem para torná-la mais acessível.
 
 ---
 
